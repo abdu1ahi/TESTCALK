@@ -1,0 +1,18 @@
+.calculator-box {
+  background-color: #309898; /* цвет фона */
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  margin: 5px;
+}
+
+.move-button {
+  position: absolute;
+  top: 3px; /* Измените значение на необходимое вам */
+  left: 72.px; /* Измените значение на необходимое вам */
+}

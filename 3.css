@@ -1,18 +1,58 @@
 .calculator-box {
-  background-color: #309898; /* цвет фона */
+  background-color: #93f6f6; /* цвет фона */
   width: 300px;
   margin: 0 auto;
   text-align: center;
+  box-shadow: 0 2.5px 0px rgb(5, 170, 185); /* Горизонтальное смещение, вертикальное смещение, размытие, цвет */
+  border-radius: 5px; /* Радиус закругления углов */
+
 }
 
+
 button {
+  border-radius: 3px; /* закругления углов */
   width: 50px;
   height: 30px;
   margin: 5px;
+  border: none; /* Убираем границу */
+  box-shadow: 0 2px 0px
+}
+
+button:active {
+  background-color: #f9f9f9; /*цвет фона при нажатии */
+}
+
+.move text {
+  position: absolute;
 }
 
 .move-button {
+  margin-top: 2px; /* Отступ сверху в пикс */
+  background-color: #fe9999;
   position: absolute;
-  top: 3px; /* Измените значение на необходимое вам */
-  left: 72.px; /* Измените значение на необходимое вам */
+  top: 3px;  
+  height: 20px;
+}
+
+.my-input {
+  margin-top: 5px; /* Отступ сверху в пикселях */
+  width: 171px;
+  margin-left: 64px; /* сдвинуть поле */
+  text-align: right;
+  background-color: #6acaca;
+}
+
+.color-button {
+  background-color: #f8f682;
+}
+
+.color-button2 {
+  background-color: #fbc6c6;
+}
+
+.calculator-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
